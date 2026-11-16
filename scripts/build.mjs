@@ -30,7 +30,7 @@ async function render(directory) {
       const section = await readFile(path.join(root, 'src/sections', `${match[1]}.html`), 'utf8');
       html = html.replace(match[0], section);
     }
-    const routes = { ABOUT: 'about/index.html', REPORTS: 'reports/index.html', FINANCIAL: 'reports/financial-analysis/index.html', CERTIFICATE: 'activities/certificate/index.html' };
+    const routes = { ABOUT: 'about/index.html', REPORTS: 'reports/index.html', FINANCIAL: 'reports/financial-analysis/index.html', CERTIFICATE: 'certifications/index.html' };
     for (const [name, route] of Object.entries(routes)) {
       const exact = relative === route;
       const active = exact || (name === 'REPORTS' && relative.startsWith('reports/'));

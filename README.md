@@ -1,6 +1,6 @@
 # Jeeyoun Lee · Portfolio
 
-네이비·베이지 색상과 3D 이미지를 사용한 연구 포트폴리오입니다. 메인 페이지에서 네 카테고리를 순서대로 스크롤하며 탐색하고, 상세 페이지와 기업 분석 대시보드로 이동합니다.
+네이비·베이지 색상과 3D 이미지를 사용한 연구 포트폴리오입니다. 메인 페이지에서 다섯 카테고리를 순서대로 스크롤하며 탐색하고, 상세 페이지와 기업 분석 대시보드로 이동합니다.
 
 ## 카테고리별 수정 위치
 
@@ -12,7 +12,7 @@
 | 재무데이터 분석 | — | `src/pages/reports/financial-analysis/` | `/reports/financial-analysis/?company=hynix` |
 | 03 Curated Readings | `src/sections/03-curated-readings.html` | 현재 메인 페이지 내 섹션 | `/#readings` |
 | 04 Research & Activities | `src/sections/04-research-activities.html` | 학회 발표는 About의 Conferences와 연결 | `/#activities` |
-| Certificate | 위 활동 섹션의 Certificate 카드 | `src/pages/activities/certificate/` | `/activities/certificate/` |
+| 05 Certification & Qualification | `src/sections/05-certification-qualification.html` | `src/pages/certifications/` | `/certifications/` |
 
 ## 폴더 구성
 
@@ -23,9 +23,8 @@ src/
     about/
     reports/
       financial-analysis/
-    activities/
-      certificate/
-  sections/              # 메인 화면의 카테고리별 콘텐츠 4개
+    certifications/
+  sections/              # 메인 화면의 카테고리별 콘텐츠 5개
   components/            # 모든 페이지에서 공유하는 메뉴·푸터
   styles/                # 공통 스타일, 메인 3D 레이아웃
   scripts/               # 메인 메뉴의 현재 섹션 표시
@@ -74,9 +73,13 @@ npm run preview
 
 `src/sections/03-curated-readings.html`에 HBR, McKinsey, The New York Times의 선정 자료와 소개 링크를 추가합니다. 아직 선정하지 않은 자료는 현재처럼 준비 상태로 표시합니다.
 
-### Research & Activities / Certificate
+### Research & Activities
 
-활동 카드는 `src/sections/04-research-activities.html`, 수료증 상세는 `src/pages/activities/certificate/index.html`에서 관리합니다. 현재 첨부된 `CERTIFICATE_Jeeyoun.jpeg` 원본을 게시하며, 이미지를 선택하면 원본 크기로 열립니다. 추가 수료증은 `public/assets/`에 넣고 상세 페이지에 항목을 추가합니다.
+학회 발표, 교내외 활동, 논문·연구 카드는 `src/sections/04-research-activities.html`에서 관리합니다.
+
+### Certification & Qualification
+
+수료·자격은 독립된 다섯 번째 카테고리입니다. 메인 콘텐츠는 `src/sections/05-certification-qualification.html`, 상세 페이지는 `src/pages/certifications/index.html`에서 관리합니다. 현재 첨부된 `CERTIFICATE_Jeeyoun.jpeg` 원본을 게시하며, 이미지를 선택하면 원본 크기로 열립니다. 추가 수료증은 `public/assets/`에 넣고 상세 페이지에 항목을 추가합니다.
 
 ## Vercel 연결
 
