@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073b89">
+  <meta name="description" content="AI 자동화로 만든 기업 분석과 보고서, 관심 있게 읽은 글, 연구와 활동을 모으는 jinawinwin의 포트폴리오입니다.">
+  <title>jinawinwin · Research Library</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23073b89'/%3E%3Cpath d='M7 8h8v17H7zm10 0h8v17h-8' fill='%23efe9d5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ROOT}}assets/css/styles.css">
+  <link rel="stylesheet" href="./reports/reports.css">
+  <link rel="stylesheet" href="{{ROOT}}assets/css/home-v2.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  {{SIDEBAR}}
+  <main id="main" tabindex="-1">
+    <header class="hero" id="home">
+      <h1 class="visually-hidden">Jeeyoun Lee 포트폴리오</h1>
+      <div class="hero-page-number" aria-hidden="true">01 / 05</div>
+    </header>
+    <nav class="section-jump" aria-label="메인 페이지 섹션 바로가기">
+      <a href="#about"><span>02</span> About</a>
+      <a href="#reports"><span>03</span> AI-Generated Reports</a>
+      <a href="#readings"><span>04</span> Curated Readings</a>
+      <a href="#activities"><span>05</span> Research &amp; Activities</a>
+    </nav>
+    <div class="library-grid">
+      {{SECTION:01-about}}
+      {{SECTION:02-ai-generated-reports}}
+      {{SECTION:03-curated-readings}}
+      {{SECTION:04-research-activities}}
+    </div>
+    {{FOOTER}}
+  </main>
+  <script src="{{ROOT}}assets/js/navigation.js" defer></script>
+</body>
+</html>
